@@ -25,7 +25,7 @@ test("displays an image of yourself with alt text", () => {
   render(<App />);
 
   // Act
-  const image = screen.getByAltText(/your name/i);
+  const image = screen.getByAltText(/Amariah Kamau/i);
 
   // Assert
   expect(image).toBeInTheDocument();
@@ -69,7 +69,7 @@ test("displays a link to your GitHub page", () => {
 
   // Assert
   expect(githubLink).toBeInTheDocument();
-  expect(githubLink).toHaveAttribute("href", "https://github.com/yourgithubusername");
+  expect(githubLink).toHaveAttribute("href", "https://github.com/AmariahAK");
 });
 
 test("displays a link to your LinkedIn page", () => {
@@ -84,5 +84,5 @@ test("displays a link to your LinkedIn page", () => {
 
   // Assert
   expect(linkedinLink).toBeInTheDocument();
-  expect(linkedinLink).toHaveAttribute("href", "https://linkedin.com/in/yourlinkedinusername");
+  expect(linkedinLink).toHaveAttribute("href", "https://www.linkedin.com/in/amariah-kamau-3156412a6/");
 });
